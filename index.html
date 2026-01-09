@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduCast Vault</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>EduCast Vault</h1>
+    <p>Cloud-native lecture media vault (Blob Storage + Cosmos DB + Logic Apps)</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Create & Upload</h2>
+
+      <div class="grid">
+        <label>Lecture ID
+          <input id="id" placeholder="lec-001" />
+        </label>
+
+        <label>Course ID (partition key)
+          <input id="courseId" placeholder="CS301" />
+        </label>
+
+        <label>Title
+          <input id="title" placeholder="Lecture title" />
+        </label>
+
+        <label>Tags (comma separated)
+          <input id="tags" placeholder="cloud,intro,week1" />
+        </label>
+
+        <label>File
+          <input id="file" type="file" />
+        </label>
+      </div>
+
+      <button id="btnCreate">Create record + Get upload URL</button>
+      <button id="btnUpload">Upload file to Blob (using SAS URL)</button>
+      <p class="hint">Tip: click Create first, then Upload.</p>
+    </section>
+
+    <section class="card">
+      <h2>Read / Update / Delete</h2>
+
+      <div class="row">
+        <button id="btnRead">Read (GET)</button>
+        <button id="btnUpdate">Update (PUT)</button>
+        <button id="btnDelete">Delete (DELETE)</button>
+      </div>
+
+      <p class="hint">Read/Update/Delete use the ID + Course ID fields above.</p>
+    </section>
+
+    <section class="card">
+      <h2>Output</h2>
+      <pre id="out">Ready.</pre>
+    </section>
+  </main>
+
+  <footer>
+    <small>EduCast Vault — COM682 Cloud Native Development (CW2)</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
