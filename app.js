@@ -1,7 +1,7 @@
-const CREATE_URL = "PASTE_CREATE_URL_HERE";
-const READ_URL   = "PASTE_READ_URL_HERE";
-const UPDATE_URL = "PASTE_UPDATE_URL_HERE";
-const DELETE_URL = "PASTE_DELETE_URL_HERE";
+const CREATE_URL = "https://prod-46.uksouth.logic.azure.com/workflows/c94c804a046341269c5dbea382a804d8/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=zjTcyuL3hyxr4sINHre0FMMztT69beN8cVv6L4vBv5k";
+const READ_URL   = "https://prod-20.uksouth.logic.azure.com/workflows/e4eb2b6124f74d37a024f850ac85f44c/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=Gse3_9X5BFRbT_P5iwA_-OPtu9RxZQKYl3pAaKlyEY8";
+const UPDATE_URL = "https://prod-52.uksouth.logic.azure.com/workflows/c9eef3ed1e0f40eda83605f90f355239/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=i0SajjtiBnAHHynafGf2_dLtgWthmStj0Pwxdz9ceJA";
+const DELETE_URL = "https://prod-40.uksouth.logic.azure.com/workflows/63cdda0dca1e453a980a8e7f5cf1edb7/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=kZJ9Fw2yD67vajljIhyq1mnGGMty9WeinqEJ_J-kA_I";
 // ===============================================
 
 let lastUploadUrl = null;
